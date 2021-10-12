@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-mah4q-ap09%&&tadfffgarpjwf-cj-1)9)gclm7i&s-t+jqm&a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://audio-podcast.herokuapp.com',localhost','127.0.0.1']
+ALLOWED_HOSTS = ['https://audio-podcast.herokuapp.com','localhost','127.0.0.1']
 
 
 # Application definition
