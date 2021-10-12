@@ -1,0 +1,8 @@
+asgiref==3.4.1
+certifi==2021.5.30
+Django==3.2.8
+djangorestframework==3.12.4
+Pillow==8.3.2
+sqlparse==0.4.2
+typing-extensions==3.10.0.2
+wincertstore==0.2
