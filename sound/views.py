@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
 
 from rest_framework.views import APIView
 
@@ -13,8 +13,8 @@ from rest_framework.authentication import TokenAuthentication
 
 # Create your views here.
 
-def home(request):
-    return HttpResponse("Home Page Test Your APi's With Postman")
+# def home(request):
+#     return HttpResponse("Home Page Test Your APi's With Postman")
 
 class LoginView(APIView):
     def post(self, request):

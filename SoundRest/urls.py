@@ -20,12 +20,12 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import  static
 
-from sound.views import ( LoginView, LogoutView, home )
+from sound.views import ( LoginView, LogoutView, )
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', LoginView.as_view()),
-    path('/', home, name='home'),
+    # path('/', home, name='home'),
     path('logout/', LogoutView.as_view()),
     path('show/', include('shows.urls')),
     path('episode/', include('episodes.urls')),
