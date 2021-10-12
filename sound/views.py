@@ -1,6 +1,7 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-from rest_framework.views import APIView 
+from rest_framework.views import APIView
 
 from sound.serializers import LoginSerializer
 from django.contrib.auth import login as django_login, logout as django_logout  #We are using this for Session Login 
@@ -11,6 +12,9 @@ from rest_framework.response import Response
 from rest_framework.authentication import TokenAuthentication
 
 # Create your views here.
+
+def home(request):
+    return HttpResponse("Home Page Test Your APi's With Postman")
 
 class LoginView(APIView):
     def post(self, request):
